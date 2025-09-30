@@ -1,24 +1,30 @@
 import os
 import requests
 
-# 從環境變數讀取 Token
 token = os.getenv("GITHUB_TOKEN")
 username = "Freedom-Hank"
 
-# 三個卡片的 API
-urls = {
-    "stats": f"https://github-readme-stats.vercel.app/api?username={username}&show_icons=true&count_private=true&theme=tokyonight",
-    "langs": f"https://github-readme-stats.vercel.app/api/top-langs/?username={username}&layout=compact&count_private=true&theme=tokyonight&card_width=500",
-    "streak": f"https://github-readme-streak-stats.herokuapp.com?user={username}&theme=tokyonight"
+themes = {
+    "dark": "tokyonight",
+    "light": "github_light"
 }
 
-# 逐一抓取並存成 svg 檔
+urls = {
+    "stats": "https://github-readme-stats.vercel.app/api?username={u}&show_icons=true&count_private=true&theme={t}",
+    "langs": "https://github-readme-stats.vercel.app/api/top-langs/?username={u}&layout=compact&count_private=true&theme={t}&card_width=500",
+    "streak": "https://github-readme-streak-stats.herokuapp.com?user={u}&theme={t}"
+}
+
 headers = {"Authorization": f"token {token}"}
-for name, url in urls.items():
-    res = requests.get(url, headers=headers)
-    if res.status_code == 200:
-        with open(f"{name}.svg", "wb") as f:
-            f.write(res.content)
-        print(f"✅ {name}.svg updated.")
-    else:
-        print(f"❌ Failed to fetch {name}: {res.status_code}")
+
+for mode, theme in themes.items():
+    for name, url in urls.items():
+        api_url = url.format(u=username, t=theme)
+        res = requests.get(api_url, headers=headers)
+        if res.status_code == 200:
+            filename = f"{name}-{mode}.svg"  # e.g. stats-dark.svg
+            with open(filename, "wb") as f:
+                f.write(res.content)
+            print(f"✅ {filename} updated.")
+        else:
+            print(f"❌ Failed to fetch {name} ({mode}): {res.status_code}")

@@ -1,60 +1,30 @@
 <h1 align="center">嗨 👋，我是 Freedom-Hank</h1>
 
+<!-- GitHub Stats -->
 <div align="center">
-
   <picture>
-    <source
-      srcset="https://github-readme-stats.vercel.app/api?username=Freedom-Hank&show_icons=true&theme=tokyonight"
-      width = 400
-      media="(prefers-color-scheme: dark)" />
-    <source
-      srcset="https://github-readme-stats.vercel.app/api?username=Freedom-Hank&show_icons=true&theme=default"
-      width = 400
-      media="(prefers-color-scheme: light)" />
-    <img
-      src="https://github-readme-stats.vercel.app/api?username=Freedom-Hank&show_icons=true"
-      height="180em"
-      alt="Freedom-Hank GitHub Stats"/>
+    <source srcset="./stats-dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./stats-light.svg" media="(prefers-color-scheme: light)" />
+    <img src="./stats-dark.svg" width="500" alt="GitHub Stats"/>
   </picture>
-
 </div>
 
 <div align="center">
 
   <!-- Top Languages -->
   <picture>
-    <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Freedom-Hank&layout=compact&theme=tokyonight&card_width=400"
-      width = 400
-      media="(prefers-color-scheme: dark)" />
-    <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Freedom-Hank&layout=compact&theme=default"
-      width = 400
-      media="(prefers-color-scheme: light)" />
-    <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Freedom-Hank&layout=compact"
-      height="180em"
-      alt="Top Languages"/>
+    <source srcset="./langs-dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./langs-light.svg" media="(prefers-color-scheme: light)" />
+    <img src="./langs-dark.svg" width="500" alt="Top Languages"/>
   </picture>
-
-</div>
 
 <div align="center">
 
   <!-- Streak Stats -->
   <picture>
-    <source
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=Freedom-Hank&theme=tokyonight"
-      width = 400
-      media="(prefers-color-scheme: dark)" />
-    <source
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=Freedom-Hank&theme=default"
-      width = 400
-      media="(prefers-color-scheme: light)" />
-    <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=Freedom-Hank"
-      height="180em"
-      alt="GitHub Streak Stats"/>
+    <source srcset="./streak-dark.svg" media="(prefers-color-scheme: dark)" />
+    <source srcset="./streak-light.svg" media="(prefers-color-scheme: light)" />
+    <img src="./streak-dark.svg" width="500" alt="GitHub Streak"/>
   </picture>
 
 </div>

@@ -26,33 +26,33 @@
 
 <!-- GitHub Stats -->
 <div align="center">
-  
+
   <picture>
     <source srcset="./images/stats-dark.svg" media="(prefers-color-scheme: dark)" />
     <source srcset="./images/stats-light.svg" media="(prefers-color-scheme: light)" />
-    <img src="./images/stats-light.svg" width="40%" alt="GitHub Stats"/>
+    <img src="./images/stats-light.svg" width="500" alt="GitHub Stats"/>
   </picture>
-  
-<!-- </div> -->
+
+</div>
 
 <!-- Top Languages -->
-<!-- <div align="center"> -->
-
+<div align="center">
+  
   <picture>
     <source srcset="./images/langs-dark.svg" media="(prefers-color-scheme: dark)" />
     <source srcset="./images/langs-light.svg" media="(prefers-color-scheme: light)" />
-    <img src="./images/langs-light.svg" height="170" alt="Top Languages"/>
+    <img src="./images/langs-light.svg" width="500" alt="Top Languages"/>
   </picture>
-  
+
 </div>
 
 <!-- Streak Stats -->
 <div align="center">
-
+  
   <picture>
     <source srcset="./images/streak-dark.svg" media="(prefers-color-scheme: dark)" />
     <source srcset="./images/streak-light.svg" media="(prefers-color-scheme: light)" />
-    <img src="./images/streak-light.svg" width="65%" alt="GitHub Streak"/>
+    <img src="./images/streak-light.svg" width="500" alt="GitHub Streak"/>
   </picture>
 
 </div>
